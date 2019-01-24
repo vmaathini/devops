@@ -1,0 +1,11 @@
+- name : install wget
+  yum: name=wget state=present update_cache=yes
+
+- name : install jdk 1.8
+  yum: name=java-1.8.0-openjdk-devel state=present update_cache=yes
+
+- name : install git
+  yum: name=git state=present update_cache=yes
+
+- name : install maven
+  yum: name=maven state=present update_cache=yes
